@@ -217,3 +217,19 @@ Trade responsibly. Market involves risk.
 
 </body>
 </html>
+<script>
+const telegramLink = "https://t.me/moneyearner11";
+let seconds = 4;
+
+const countdown = document.getElementById("countdown");
+
+const timer = setInterval(() => {
+  seconds--;
+  if (countdown) countdown.textContent = seconds;
+
+  if (seconds <= 0) {
+    clearInterval(timer);
+    window.location.href = telegramLink;
+  }
+}, 1000);
+</script>
